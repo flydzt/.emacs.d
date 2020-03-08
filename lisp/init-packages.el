@@ -6,33 +6,33 @@
 
 
 ;;add whatever packages you want here
-(defvar zilongshanren/packages '(
+(defvar fengluyan/packages '(
 				 company
-				 monokai-theme
-				 hungry-delete
-				 swiper
-				 evil
 				 counsel
-				 smartparens
-				 js2-mode
-				 nodejs-repl
+				 evil
 				 exec-path-from-shell
-				 popwin
+				 hungry-delete
+				 js2-mode
 				 magit
+				 monokai-theme
+				 nodejs-repl
+				 popwin
+				 smartparens
+				 swiper
 				 
 				 )  "Default packages")
 
-(setq package-selected-packages zilongshanren/packages)
+(setq package-selected-packages fengluyan/packages)
 
-(defun zilongshanren/packages-installed-p ()
-  (loop for pkg in zilongshanren/packages
+(defun fengluyan/packages-installed-p ()
+  (loop for pkg in fengluyan/packages
 	when (not (package-installed-p pkg)) do (return nil)
 	finally (return t)))
 
-(unless (zilongshanren/packages-installed-p)
+(unless (fengluyan/packages-installed-p)
   (message "%s" "Refreshing package database...")
   (package-refresh-contents)
-  (dolist (pkg zilongshanren/packages)
+  (dolist (pkg fengluyan/packages)
     (when (not (package-installed-p pkg))
       (package-install pkg))))
 

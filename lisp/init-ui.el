@@ -9,8 +9,11 @@
 
 (set-default-font "Source Code Pro 16")
 
-(set-fontset-font"fontset-default"
-		 'gb18030'("微软雅黑"."unicode-bmp"))
+
+(dolist (charset '(kana han symbol cjk-misc bopomofo))
+  (set-fontset-font (frame-parameter nil 'font)
+            charset
+            (font-spec :family "Microsoft Yahei" :size 26)))
 
 (global-hl-line-mode t)
 
