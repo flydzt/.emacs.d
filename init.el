@@ -21,6 +21,9 @@
 (require 'init-org)
 (require 'init-magit)
 (require 'init-evil)
+(require 'init-go)
+(require 'init-project)
+
 
 
 (setq custom-file (expand-file-name "lisp/custom.el" user-emacs-directory))

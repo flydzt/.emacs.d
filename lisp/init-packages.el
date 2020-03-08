@@ -19,7 +19,8 @@
 				 popwin
 				 smartparens
 				 swiper
-				 
+				 go-mode
+				 projectile
 				 )  "Default packages")
 
 (setq package-selected-packages fengluyan/packages)
