@@ -9,6 +9,9 @@
 
 (set-default-font "Source Code Pro 16")
 
+(set-fontset-font"fontset-default"
+		 'gb18030'("微软雅黑"."unicode-bmp"))
+
 (global-hl-line-mode t)
 
 (provide 'init-ui)

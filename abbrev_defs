@@ -3,19 +3,9 @@
 
 (define-abbrev-table 'Info-edit-mode-abbrev-table '())
 
-(define-abbrev-table 'apropos-mode-abbrev-table '())
-
-(define-abbrev-table 'bibtex-mode-abbrev-table '())
-
-(define-abbrev-table 'calendar-mode-abbrev-table '())
-
-(define-abbrev-table 'comint-mode-abbrev-table '())
-
 (define-abbrev-table 'completion-list-mode-abbrev-table '())
 
-(define-abbrev-table 'diary-fancy-display-mode-abbrev-table '())
-
-(define-abbrev-table 'diary-mode-abbrev-table '())
+(define-abbrev-table 'debugger-mode-abbrev-table '())
 
 (define-abbrev-table 'diff-mode-abbrev-table '())
 
@@ -29,8 +19,7 @@
 
 (define-abbrev-table 'global-abbrev-table
   '(
-    ("8ms" "Macrosoft" nil 1)
-    ("8zl" "zilongshanren" nil 2)
+    ("fly" "fengluyan" nil 0)
    ))
 
 (define-abbrev-table 'help-mode-abbrev-table '())
@@ -47,10 +36,6 @@
 
 (define-abbrev-table 'occur-mode-abbrev-table '())
 
-(define-abbrev-table 'org-mode-abbrev-table '())
-
-(define-abbrev-table 'outline-mode-abbrev-table '())
-
 (define-abbrev-table 'package-menu-mode-abbrev-table '())
 
 (define-abbrev-table 'process-menu-mode-abbrev-table '())
@@ -60,8 +45,6 @@
 (define-abbrev-table 'select-tags-table-mode-abbrev-table '())
 
 (define-abbrev-table 'special-mode-abbrev-table '())
-
-(define-abbrev-table 'speedbar-mode-abbrev-table '())
 
 (define-abbrev-table 'tabulated-list-mode-abbrev-table '())
 

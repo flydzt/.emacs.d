@@ -1,2 +1,6 @@
 auto-save-list
 elpa
+.emacs.desktop*
+recentf
+transient
+server

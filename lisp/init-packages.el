@@ -1,8 +1,7 @@
 (require 'cl)
 
-(when (>= emacs-major-version 24)
-  (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t)
-  )
+(setq package-archives '(("gnu"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")
+                         ("melpa" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")))
 
 
 
@@ -19,6 +18,7 @@
 				 nodejs-repl
 				 exec-path-from-shell
 				 popwin
+				 magit
 				 
 				 )  "Default packages")
 
@@ -63,7 +63,5 @@
 
 (require 'popwin)    ;;when require, wh(setq company-minimum-prefix-length 1)en not require
 (popwin-mode t)
-
-(evil-mode 1)
 
 (provide 'init-packages)
