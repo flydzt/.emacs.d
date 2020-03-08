@@ -21,7 +21,6 @@
 (require 'init-org)
 (require 'init-magit)
 (require 'init-evil)
-(require 'init-go)
 (require 'init-project)
 
 
