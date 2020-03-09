@@ -12,10 +12,7 @@
 				 evil
 				 exec-path-from-shell
 				 hungry-delete
-				 js2-mode
 				 magit
-				 monokai-theme
-				 nodejs-repl
 				 popwin
 				 smartparens
 				 swiper
@@ -50,12 +47,6 @@
 (ivy-mode 1)
 (setq ivy-use-virtual-buffers t)
 
-
-;; config js2-mode for js files
-(setq auto-mode-alist
-      (append
-       '(("\\.js\\'" . js2-mode))
-       auto-mode-alist))
 
 (global-company-mode t)
 
