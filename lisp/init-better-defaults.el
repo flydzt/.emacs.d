@@ -6,9 +6,12 @@
 
 (global-linum-mode t)
 
-(setq make-backup-files nil)
+(custom-set-variables
+ '(auto-save-file-name-transforms '((".*" "~/.emacs.d/autosaves/" t)))
+ '(backup-directory-alist '((".*" . "~/.emacs.d/backups/"))))
 
-(setq auto-save-default nil)
+
+(add-hook 'after-init-hook #'auto-save-visited-mode)
 
 
 (add-hook 'emacs-lisp-mode-hook 'show-paren-mode)

@@ -7,3 +7,5 @@ server
 projectile*
 /eshell/
 /lisp/custom
+autosaves
+backups
